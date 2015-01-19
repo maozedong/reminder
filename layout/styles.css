@@ -1,22 +1,35 @@
 body {
-    background-color: red;
+    background-color: whitesmoke;
 }
 
 .item {
+    margin: auto;
     background-color: #0000fe;
+    border-bottom-style: groove;
+    width: 500px;
+    height: 80px;
 }
 
 .item .circle-image {
-    border-radius: 30px;
-    width: 60px;
-    height: 60px;
+    border-radius: 160px;
+    width: 80px;
+    height: 80px;
     display: block;
-    background-color: #008000;
+    background-color: orangered;
     float: left;
 }
 
 .item h4 {
-    font-weight: bold;
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
+    line-height: 28px;
+}
+.item .description {
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+    line-height: 10px;
 }
 
 .item .galochka {
