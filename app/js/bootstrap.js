@@ -1,7 +1,7 @@
 define([
     'require',
     'angular',
-    'reminder'
+    'js/app'
 ], function (require, ng) {
     'use strict';
 

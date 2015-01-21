@@ -1,17 +1,23 @@
 define([
-    'angular',
-    './text!calendar.html'
-], function (angular) {
+    'text!js/calendar/calendar.html'
+], function (template) {
     'use strict';
 
     return [function(){
         return {
-            templateUrl: './calendar.html',
+            template: template,
             scope: {
 
             },
-            link: function(){
+            controller: function($scope){
+                $scope.dates = [];
+                var tempDate = null;
 
+                for(var i=0;i<10;i++){
+                    tempDate = new Date();
+                    tempDate.setDate(tempDate.getDate() - (i-5));
+                    $scope.dates.push(tempDate);
+                }
             }
         };
     }];

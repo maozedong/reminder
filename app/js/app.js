@@ -1,10 +1,12 @@
 define([
     'angular',
-    './js/calendar/calendar.js'
-], function (angular, calendar) {
+    'js/header/header.js',
+    'js/calendar/calendar.js'
+], function (angular, header, calendar) {
     'use strict';
 
     var app = angular.module('reminder', []);
 
-    //app.directive('calendar', calendar);
+    app.directive('header', header);
+    app.directive('calendar', calendar);
 });

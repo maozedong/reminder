@@ -9,6 +9,6 @@
     "angular": "latest",
     "requirejs": "latest",
     "requirejs-domready": "latest",
-    "requirejs-text": "latest"
+    "requirejs-plugins": "latest"
   }
 }

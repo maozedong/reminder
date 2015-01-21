@@ -1,19 +1,16 @@
 require.config({
 
-    // alias libraries paths
+    baseUrl: "/reminder/app/",
     paths: {
-        'domReady': '../bower_components/requirejs-domready/domReady',
-        'angular': '../bower_components/angular/angular',
-        'reminder': './app'
+        'text' : 'bower_components/requirejs-plugins/lib/text',
+        'json' : 'bower_components/requirejs-plugins/src/json',
+        'domReady': 'bower_components/requirejs-domready/domReady',
+        'angular': 'bower_components/angular/angular'
     },
-
-    // angular does not support AMD out of the box, put it in a shim
     shim: {
         'angular': {
             exports: 'angular'
         }
     },
-
-    // kick start application
-    deps: ['./bootstrap']
+    deps: ['js/bootstrap']
 });

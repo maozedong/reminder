@@ -5,7 +5,7 @@ body {
     padding: 30px 0 0 0;
 }
 
-nav {
+header {
     background-color: blue;
     position: fixed;
     box-shadow: 10px 10px 10px 10px;
@@ -15,7 +15,7 @@ nav {
     text-align: center;
 }
 
-nav a, nav a:hover, nav a:visited {
+header a, header a:hover, header a:visited {
     color: white;
     text-decoration: none;
 }
