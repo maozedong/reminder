@@ -1,13 +1,33 @@
+/* тут ідуть стилі для екранів < за 600пікс */
 body {
     background-color: whitesmoke;
+    margin: 0 0 0 0;
+    padding: 30px 0 0 0;
+}
+
+nav {
+    background-color: blue;
+    position: fixed;
+    box-shadow: 10px 10px 10px 10px;
+    height: 30px;
+    width: 100%;
+    top: 0;
+    text-align: center;
+}
+
+nav a, nav a:hover, nav a:visited {
+    color: white;
+    text-decoration: none;
 }
 
 .item {
-    margin: auto;
     background-color: #0000fe;
     border-bottom-style: groove;
-    width: 500px;
     height: 80px;
+}
+
+.item:hover {
+    box-shadow: 5px 5px 5px 5px;
 }
 
 .item .circle-image {
@@ -34,4 +54,12 @@ body {
 
 .item .galochka {
     /*хз так зразу і не напишеш )*/
+}
+
+/* тут ідуть стилі для екранів > за 600пікс */
+@media screen and (min-width: 600px) {
+    .item {
+        margin: auto;
+        width: 500px;
+    }
 }
