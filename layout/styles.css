@@ -24,6 +24,7 @@ header a, header a:hover, header a:visited {
     background-color: #0000fe;
     border-bottom-style: groove;
     height: 80px;
+    width: 100%;
 }
 
 .item:hover {
@@ -59,7 +60,79 @@ header a, header a:hover, header a:visited {
 /* тут ідуть стилі для екранів > за 600пікс */
 @media screen and (min-width: 600px) {
     .item {
-        margin: auto;
         width: 500px;
+        margin: auto;
     }
+}
+
+@media screen and (min-width: 960px) {
+    .item {
+        background-color: red;
+    }
+}
+
+
+/* css selectors */
+
+div{
+    color: red;
+}
+
+div{
+    color: grey;
+}
+
+.some-class{
+    color: blue;
+}
+
+.some-class.sec-class{
+    color: #000080;
+}
+
+.parent .sec-class{
+    color: magenta;
+}
+
+#some-id{
+    color: yellow;
+}
+
+#some-id.some-class{
+    color: #008000;
+}
+
+div[my-attr="someval"]{
+
+}
+
+
+
+
+
+/* box-model */
+
+.parent {
+    background-color: gray;
+}
+
+.block{
+    display: block;
+    background-color: #008000;
+    margin: 2px;
+    padding: 2px;
+}
+
+.inline {
+    display: inline;
+    background-color: red;
+    margin: 2px;
+    padding: 2px;
+}
+
+.inline-block{
+    display: inline-block;
+    background-color: blue;
+    margin: 2px;
+    padding: 2px;
 }
